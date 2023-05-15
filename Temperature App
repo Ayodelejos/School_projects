@@ -1,0 +1,22 @@
+
+def fahrenheit(f):
+         f = float (f-32)*5/9
+         return f
+         
+def celsuis(c):
+         c= float (c * 1.8) + 32
+         return c
+         print(c, 'is the value when converted to Fahrenheit')        
+
+#Main code
+
+userinput=int(input('enter 1 if you want to convert to celsuis and 2 if you want to convert to fahrenheit: '))
+if userinput==1:
+   c=float(input('Enter the value u want to conver to celsuis:'))
+   celsuis(c)
+   print( celsuis(c), 'is the value when converted to celsuis')    
+elif userinput==2:
+  f=float(input('Enter the value u want to conver to fahrenheit'))
+  print(fahrenheit(f), 'is the value when converted to Fahrenheit')   
+else:
+  print('That is not valid option')
